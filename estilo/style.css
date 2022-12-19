@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
 
-.teste{
-    display: none;
-}
+
 
 *{
     box-sizing: border-box;
@@ -209,7 +207,123 @@ input[type=number] {
 /*Final TELA DESKTOP*/
 
 
+@media (min-width:861px){
+    .mobile{
+        display: none;
+    }
+
+}
+
 @media (max-width:860px){
+    
+    .mobile .titulo {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        padding: 0;
+        gap: 19px;
+        margin-left: 30px;
+        margin-top: 31px;
+    }
+
+    .mobile .titulo img{
+        width: 72px;
+        height: 49px;
+    }
+    .mobile .titulo h1{
+        width: 172px;
+        height: 30px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #000000;
+
+        text-shadow: 4px 1px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    .mobile label{
+        display: block;
+        width: 21.75px;
+        height: 15px;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #000;
+        text-shadow: 4px 1px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    .mobile input{
+        border: none;
+        width: 248px;
+        height: 37px;
+
+        background: #D9D9D9;
+        border-radius: 5px;
+        outline: none;
+        padding: 10px;
+    }
+
+    .mobile .w50{
+        margin-bottom: 35px;
+    }
+
+    .mobile form{
+        margin-left: 83px;
+        margin-top: 89px;
+    }
+
+    .mobile .btn-mobile{
+        width: 119px;
+        height: 37px;
+        border: none;
+
+        background: #4A0E96;
+        border-radius: 6px;
+
+        font-size: 13px;
+        font-weight: 700;
+        color: #FFFFFF;
+        line-height: 15px;
+        text-align: center;
+
+        margin-top: 23px;
+        margin-left: 147px;
+
+    }
+
+    .mobile a{
+        text-decoration: none;
+    }
+    
+
+    .mobile p{
+        width: 83px;
+        height: 15px;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 15px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #000000;
+
+        margin-top: 11px;
+        margin-left: 165px;
+        }
+
+
+    .desktop{
+        display: none;
+    }
+    
     .tela-roxa{
         display: none;
         animation:fadeIn 2s linear;
@@ -229,17 +343,14 @@ input[type=number] {
     }
 }
 
-@media (min-width:500px){
-    .teste{
-        display: none;
-    }
-}
 
 @media (max-width:500px) {
 
 
+
     .formulario{
-        padding: 0 20px;
+        padding: 0 0px;
+        
         
     }
     .box{
@@ -253,12 +364,7 @@ input[type=number] {
         
     }
 
-    .desktop input{
-        width: 220px;
-        height: 37px;
-        padding: 7px;
-        
-    }
+   
 
     .formulario{
         width: 313px;
@@ -267,28 +373,34 @@ input[type=number] {
     
     }
 
-    .desktop h1{
-        margin-top: 36px;
-        margin-left: 78px;
-        font-size: 20px;
-        
+
+    .mobile .titulo img{
+        width: 50px;
+        height: 34px;
     }
 
-    .desktop label{
-        font-size: 12px;
-        padding-bottom: 5px;
+    .mobile .titulo h1{
+        font-size: 16px;
+        line-height: 24px;
+        width: 137px;
+        height: 24px;
+
+        padding-top: 5px;
     }
 
-    .desktop .btn-desktop{
-        width: 90px;
-        height: 37px;
-        font-size: 12px;
-        margin-left: 67px;
-        margin-top: 20px;
-    } 
-
-    .desktop p{
-        margin-left: 70px;
-        margin-top:8px
+    .mobile form{
+        margin-top: 45px;
+        margin-left: 33px;
+        padding-right: 33px;
     }
+
+    .mobile .btn-mobile{
+        margin-left: 97px;
+        margin-top: 30px;
+    }
+
+    .mobile p{
+        margin-left: 115px;        
+    }
+
 }
